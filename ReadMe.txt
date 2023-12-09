@@ -3,6 +3,7 @@ https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
 TODO:
 Пока учим теорию!!!
+https://www.ixbt.com/cpu/x86-cpu-faq-2006.shtml
 
 DONE:
 Используя Escape-последовательности вывести в консоль стишок "В лесу родилась Ёлочка".
