@@ -2,6 +2,10 @@
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
 TODO:
+Вывести в консоль объем занимаемой памяти и диапазон принимаемых значений для всех целочисленных типов данных,
+таким образом, как это было сделано для 'int'.
+
+TODO:
 Пока учим теорию!!!
 https://www.ixbt.com/cpu/x86-cpu-faq-2006.shtml
 http://www.softelectro.ru/ieee754.html

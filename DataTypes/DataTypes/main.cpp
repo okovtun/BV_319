@@ -1,6 +1,9 @@
 ﻿//DataTypes
 #include<iostream>
 using namespace std;
+using std::cin;
+using std::cout;
+using std::endl;
 
 /*
 --------------
@@ -15,11 +18,20 @@ type - тип переменной, определяет три вещи:
 		true  - 1
 		false - 0
 		0 - это false, а true - это все что НЕ 0
-
+ II) Символьные типы: char (Character - Символ) 
+	 Занимает 1 Byte памяти и содержит один из 256 сиволов в кодировке 
+	 ASCII - American Standard Code for Information Interchange.
+III) Числовые типы. Делятся на целочисленные и вещественные.
+	 Целочисленные типы предназанчены для хранения целых чисел,
+	 а вещественные - для хранения дробных чисел.
+	 В свою очередь целочисленные типы делятся на беззнаковые (unsigned),
+	 могут хранить только положительные целые числа, изнаковые (signed),
+	 могут хранить как положительные, так и отрицательные целые числа.
 --------------
 */
 
 //#define LOGICAL_TYPES
+
 
 void main()
 {
@@ -37,12 +49,10 @@ void main()
 	2 > 3;	//false
 	2 < 3;	//true
 #endif
-	__asm
-	{
-
-		mov eax, 2;	//помещает '2' в регистр 'ax'
-		add eax, 3;	//к содержимому регистра 'ax' прибавляет '3'
-	}
-	short i = 2;
-	i += 3;
+	
+	cout << "int: ";
+	cout << sizeof(int) << endl;
+	//макроопределений Visual Studio
+	cout << "unsigned int: " << 0 << " ... " << UINT_MAX << endl;//UINT - unsigned int
+	cout << "  signed int: " << INT_MIN << " ... " << INT_MAX << endl;
 }
