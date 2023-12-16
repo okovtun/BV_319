@@ -55,4 +55,5 @@ void main()
 	//макроопределений Visual Studio
 	cout << "unsigned int: " << 0 << " ... " << UINT_MAX << endl;//UINT - unsigned int
 	cout << "  signed int: " << INT_MIN << " ... " << INT_MAX << endl;
+
 }
