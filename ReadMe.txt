@@ -2,6 +2,10 @@
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
 TODO:
+https://www.youtube.com/watch?v=G4lcA2d5m2E
+https://www.youtube.com/watch?v=z0jQZxH7NgM
+
+TODO:
 Вывести в консоль объем занимаемой памяти и диапазон принимаемых значений для всех целочисленных типов данных,
 таким образом, как это было сделано для 'int'.
 
