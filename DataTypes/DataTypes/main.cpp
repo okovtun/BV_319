@@ -27,11 +27,25 @@ III) Числовые типы. Делятся на целочисленные �
 	 В свою очередь целочисленные типы делятся на беззнаковые (unsigned),
 	 могут хранить только положительные целые числа, изнаковые (signed),
 	 могут хранить как положительные, так и отрицательные целые числа.
+
+identitfier - это имя.
+				Правила именования переменных:
+1. ABC...Zabc...z012...9_;
+2. 
+3. 
+4. 
 --------------
 */
 
-//#define LOGICAL_TYPES
+#define TYPE_INFO(TypeName, Size, minValue, maxValue)\
+	cout << "Тип данных '" << ##TypeName << "' занимает " << ##Size \
+		<< " Байт памяти\nи принимает значения в диапазоне:\n"\
+		<< ##TypeName << ": " << ##minValue << " ... " << ##maxValue<<";\n"
 
+#define delimiter "\n------------------------------------------------\n"
+
+//#define LOGICAL_TYPES
+//#define FLOATING_TYPES
 
 void main()
 {
@@ -53,7 +67,21 @@ void main()
 	cout << "int: ";
 	cout << sizeof(int) << endl;
 	//макроопределений Visual Studio
-	cout << "unsigned int: " << 0 << " ... " << UINT_MAX << endl;//UINT - unsigned int
-	cout << "  signed int: " << INT_MIN << " ... " << INT_MAX << endl;
+	TYPE_INFO("short", sizeof(short), SHRT_MIN, SHRT_MAX );
+	cout << "unsigned int: " 
+		<< 0 << " ... " 
+		<< UINT_MAX << endl;//UINT - unsigned int\
+	lkdsjfglsdgldshgldsg
+	//cout << "  signed int: " << INT_MIN << " ... " << INT_MAX << endl;
+	cout << delimiter << endl;
+
+#ifdef FLOATING_TYPES
+	//float
+//double
+	TYPE_INFO("float", sizeof(float), FLT_MIN, FLT_MAX);
+	cout << delimiter << endl;
+
+	TYPE_INFO("double", sizeof(double), DBL_MIN, DBL_MAX);
+#endif // FLOATING_TYPES
 
 }
