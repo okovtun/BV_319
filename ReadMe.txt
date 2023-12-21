@@ -2,7 +2,10 @@
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
 TODO:
-Повторяем всю теорию!!!
+1. Повторяем всю теорию!!!
+2. Решить все задачи из файла:
+	https://github.com/okovtun/BV_319/blob/master/DataTypes/DataTypes/VariablesTask.pdf
+	Если первая задача не получается, пропускаем ее и идем дальше.
 
 TODO:
 https://www.youtube.com/watch?v=G4lcA2d5m2E
