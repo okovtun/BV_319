@@ -45,7 +45,9 @@ identitfier - это имя.
 #define delimiter "\n------------------------------------------------\n"
 
 //#define LOGICAL_TYPES
+//#define INTEGRAL_TYPES
 //#define FLOATING_TYPES
+//#define DECLARATION_AND_INITIALIZATION
 
 void main()
 {
@@ -64,16 +66,18 @@ void main()
 	2 < 3;	//true
 #endif
 	
+#ifdef INTEGRAL_TYPES
 	cout << "int: ";
 	cout << sizeof(int) << endl;
 	//макроопределений Visual Studio
-	TYPE_INFO("short", sizeof(short), SHRT_MIN, SHRT_MAX );
-	cout << "unsigned int: " 
-		<< 0 << " ... " 
+	TYPE_INFO("short", sizeof(short), SHRT_MIN, SHRT_MAX);
+	cout << "unsigned int: "
+		<< 0 << " ... "
 		<< UINT_MAX << endl;//UINT - unsigned int\
 	lkdsjfglsdgldshgldsg
 	//cout << "  signed int: " << INT_MIN << " ... " << INT_MAX << endl;
 	cout << delimiter << endl;
+#endif // INTEGRAL_TYPES
 
 #ifdef FLOATING_TYPES
 	//float
@@ -84,4 +88,38 @@ void main()
 	TYPE_INFO("double", sizeof(double), DBL_MIN, DBL_MAX);
 #endif // FLOATING_TYPES
 
+#ifdef DECLARATION_AND_INITIALIZATION
+	/*int a;
+int t;
+double price;
+double price_of_coffee;
+double priceOfCoffee;
+double PriceOfCoffee;*/
+//snake_case_style
+//PascalCaseStyle
+//CamelCaseStyle
+//smallCamel
+//BigCamel
+
+	double price_of_coffee = 0;		//Инициализация при объявлении
+	cout << price_of_coffee << endl;
+
+	//			инициализация (initialization)
+	int a;	//объявление переменной
+	a = 0;	//инициализация переменной после объявления оператором присваивания
+	int b;	//объявление переменной
+	cout << "Введите число: "; cin >> b;	//инициализация переменной после объявления вводом с клавиатуры
+	//Инициализация - это когда в переменную первый раз что-то записывают, не важно каким образом.
+	//Когда мы сами записали туда значение, мы уже знаем что хранится в переменной, 
+	//это значение лежит в контексте нашей задачи.  
+#endif // DECLARATION_AND_INITIALIZATION
+
+	double price_of_coffee;
+	int number_of_cups;
+	cout << "Введите стоимость одной чашки кофе: "; cin >> price_of_coffee;
+	cout << "Введите количество чашек: "; cin >> number_of_cups;
+
+	cout << "Стоимость одной чашки: "<< price_of_coffee << " руб." << endl;
+	cout << "Количество чашек: " << number_of_cups << endl;
+	cout << "Общая стоимость: " << price_of_coffee * number_of_cups << " рублей\n";
 }

@@ -2,6 +2,9 @@
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
 TODO:
+Повторяем всю теорию!!!
+
+TODO:
 https://www.youtube.com/watch?v=G4lcA2d5m2E
 https://www.youtube.com/watch?v=z0jQZxH7NgM
 
