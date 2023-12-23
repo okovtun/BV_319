@@ -2,6 +2,12 @@
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
 TODO:
+1. Используя программу AIDA-64 измерить производительность Cache-памяти своего CPU;
+	https://www.aida64.com/downloads/NDMxOTNlNGY=
+2. https://www.youtube.com/watch?v=KCpVW6OKPwA;
+3. Что такое "Tick-Tack"?
+
+TODO:
 1. Повторяем всю теорию!!!
 2. Решить все задачи из файла:
 	https://github.com/okovtun/BV_319/blob/master/DataTypes/DataTypes/VariablesTask.pdf
