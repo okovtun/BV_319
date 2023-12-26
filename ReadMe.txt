@@ -2,6 +2,18 @@
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
 TODO:
+1. https://www.chipdip.ru/info/import-ic-packages
+2. !!! НЕ ПОВТОРЯЙТЕ ЭТОТ ТРЮК В ДОМАШНИХ УСЛОВИЯХ !!!
+	https://www.chipdip.ru/info/import-ic-packages
+	https://www.youtube.com/watch?v=XXs0I5kuoX4
+	https://www.youtube.com/watch?v=rtWrRYzh45g
+	https://www.youtube.com/watch?v=ZuzSx0HmpR0
+	https://www.youtube.com/watch?v=kz08QeNjirI
+	https://www.youtube.com/watch?v=9c8lqdr5UiM
+	https://www.youtube.com/watch?v=3TkWiy837V4
+	https://www.youtube.com/watch?v=sl0VrsXhDn4
+
+DONE:
 1. Используя программу AIDA-64 измерить производительность Cache-памяти своего CPU;
 	https://www.aida64.com/downloads/NDMxOTNlNGY=
 2. https://www.youtube.com/watch?v=KCpVW6OKPwA;
