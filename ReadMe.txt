@@ -1,6 +1,9 @@
 ﻿https://github.com/okovtun/BV_319.git
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
+TOREAD:
+https://legacy.cplusplus.com/doc/tutorial/constants/
+
 TODO:
 1. https://www.chipdip.ru/info/import-ic-packages
 2. !!! НЕ ПОВТОРЯЙТЕ ЭТОТ ТРЮК В ДОМАШНИХ УСЛОВИЯХ !!!
