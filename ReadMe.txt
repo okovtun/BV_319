@@ -1,8 +1,40 @@
 ﻿https://github.com/okovtun/BV_319.git
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
+TODO:
+Следующие задачи нужно решить без компилятора:
+1. Что будет выведено на экран:
+	int i = 3;
+	i = ++i + ++i;
+	cout << i << endl;
+2. Что будет выведено на экран:
+	int i = 3;
+	i = i++ + ++i;
+	cout << i << endl;
+3. Что будет выведено на экран:
+	int i = 3;
+	i = i++ + 1 + ++i * 2;
+	cout << i << endl;
+4. Что будет выведено на экран:
+	int i = 3;
+	i = i++ + 1 + ++i *= 2;
+	cout << i << endl;
+5. Что будет выведено на экран:
+	int i = 3;
+	i += i++ + 1 + ++i *= 2;
+	cout << i << endl;
+6. Что будет выведено на экран:
+	int i = 3;
+	i *= i++ + 1 + ++i += 2;
+	cout << i << endl;
+
+
 TOREAD:
 https://legacy.cplusplus.com/doc/tutorial/constants/
+https://www.youtube.com/watch?v=R2fauhD8sgY
+
+Фазы питания:
+https://www.youtube.com/watch?v=EaWCnEf8mAE&t=247s
 
 TODO:
 1. https://www.chipdip.ru/info/import-ic-packages
