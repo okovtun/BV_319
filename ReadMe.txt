@@ -2,6 +2,10 @@
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
 TODO:
+В итернет-магазине Citilink или DNS (на Ваше усмотрение) выьрать материнскую плату с сокетом LGA-1700.
+Бюджет не ограничен.
+
+TODO:
 Следующие задачи нужно решить без компилятора:
 1. Что будет выведено на экран:
 	int i = 3;
