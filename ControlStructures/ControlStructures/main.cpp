@@ -1,5 +1,6 @@
 ﻿//ControlStructures
 #include<iostream>
+#include<conio.h>
 using namespace std;
 using std::cin;
 using std::cout;
@@ -7,7 +8,7 @@ using std::endl;
 
 //#define IF_ELSE
 //#define WHILE_1
-#define WHILE_2
+//#define WHILE_2
 
 void main()
 {
@@ -80,4 +81,13 @@ void main()
 	cout << n << endl;
 #endif // WHILE_2
 
+	char key;
+	do
+	{
+		key = _getch();	//Функция _getch() ожидает нажатие клавиши, и возвращает ASCII-код нажатой клавиши,
+		//этот ASCII-код мы присваиваем переменной key.
+		//Функция _getch() объявлена в библиотеке <conio.h>
+		cout << (int)key << "\t" << key << endl;
+		//(int)key - это явное преобразование типа 'char' в 'int', для того чтобы увидеть ASCII-код символа.
+	} while (true);
 }

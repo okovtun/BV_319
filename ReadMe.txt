@@ -2,6 +2,9 @@
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
 TODO:
+https://ru.gecid.com/power/sovremennyee_bloki_pitaniya_atx_i_ih_harakteristiki/
+
+TODO:
 1. Написать программу "Калькулятор", которая вычисляет выражения вида:
 	2 + 3;
 2. Пользователь вводит число, а программа говорит, является ли это число палиндромом.
@@ -11,6 +14,16 @@ TODO:
    1221
    121
    2
+3. В Solution 'ControlStructures' добавить проект 'Shooter', и в этом проекте реализовать Shooter,
+   который выводит на экран действие, согласно нажатой клавиши:
+	w - вперед;
+	s - назад;
+	a - налево;
+	d - направо;
+	space - прыжок;
+	enter - огонь;
+	escape - выход;
+   Если пользователь нажал не ту клавишу, на экран выводится 'Error'.
 
 TODO:
 Изучить шину USB:
