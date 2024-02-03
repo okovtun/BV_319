@@ -2,6 +2,9 @@
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
 TODO:
+https://rlab.ru/doc/hdd_from_inside.html
+
+TODO:
 https://www.intel.com/content/www/us/en/support/articles/000059657/processors/intel-xeon-processors.html?wapkw=xeon%20gold%206246(r)
 Собрать сервер
 
