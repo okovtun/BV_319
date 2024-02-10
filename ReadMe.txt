@@ -4,10 +4,6 @@ https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 TODO:
 https://rlab.ru/doc/hdd_from_inside.html
 
-DONE:
-https://www.intel.com/content/www/us/en/support/articles/000059657/processors/intel-xeon-processors.html?wapkw=xeon%20gold%206246(r)
-Собрать сервер
-
 TODO:
 В Solution 'ControlStructures' добавить проект 'Geometry' и в этом проекте
 вывести в консоль все фигуры из файла:
@@ -23,7 +19,12 @@ TODO:
 3. Вывести на экран таблицу умножения;				DONE
 4. Вывести на экран таблицу Пафагора, при выводе единицы должны быть над единицами, а не над десятками;
 
-TODO:
+DONE:
+https://www.intel.com/content/www/us/en/support/articles/000059657/processors/intel-xeon-processors.html?wapkw=xeon%20gold%206246(r)
+Собрать сервер
+
+
+DONE:
 В проекте 'FOR' решить следующие задачи:
 1. С клавиатуры вводится число, и программа вычисляет факториал этого числа.			DONE
    Факториал - это произведение ряда чисел от 1 до указанного, например:
@@ -47,7 +48,7 @@ TODO:
 TODO:
 https://ru.gecid.com/power/sovremennyee_bloki_pitaniya_atx_i_ih_harakteristiki/
 
-TODO:
+DONE:
 1. Написать программу "Калькулятор", которая вычисляет выражения вида:
 	2 + 3;
 2. Пользователь вводит число, а программа говорит, является ли это число палиндромом.
