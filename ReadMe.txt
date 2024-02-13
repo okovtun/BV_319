@@ -2,6 +2,15 @@
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
 TODO:
+1. https://www.crucial.com/articles/about-ssd/m2-with-pcie-or-sata#:~:text=2%20slot.-,The%20M.,%2C%2080%2C%20or%20110%20millimeters.
+2. Почитать про RAID-массивы:
+	RAID-0
+	RAID-1
+	RAID-5
+	RAID-6
+	RAID-10
+
+DONE:
 https://rlab.ru/doc/hdd_from_inside.html
 
 TODO:
