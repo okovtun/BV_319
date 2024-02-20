@@ -2,6 +2,18 @@
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
 TODO:
+1. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/ChessBoard.jpg
+2. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/HardChess.jpg
+
+TODO:
+1. Добить геометрию:
+	https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/Geometria1.txt
+2. *Вывести ромбик на экран, используя всего один основной цикл;
+3. *Вывести ромбик на экран, используя всего два цикла - один основной, и один вложенный;
+4. Поменять местами две переменные;
+5. Вычислить максимально-возможный объем диска для LBA-28 и LBA-48;
+
+DONE:
 1. https://www.crucial.com/articles/about-ssd/m2-with-pcie-or-sata#:~:text=2%20slot.-,The%20M.,%2C%2080%2C%20or%20110%20millimeters.
 2. Почитать про RAID-массивы:
 	RAID-0
@@ -13,13 +25,13 @@ TODO:
 DONE:
 https://rlab.ru/doc/hdd_from_inside.html
 
-TODO:
+DONE:
 В Solution 'ControlStructures' добавить проект 'Geometry' и в этом проекте
 вывести в консоль все фигуры из файла:
 	https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/Geometria1.txt
 Размер фигуры пользователь вводит с клавиатуры.
 
-TODO:
+DONE:
 1. Почитать про "Длинную арифметику";
 2. С клавиатуры вводится предельное число, и программа выводит на экран ряд простых чисел	DONE
    до заданного предела.
