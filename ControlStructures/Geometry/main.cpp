@@ -8,6 +8,7 @@ using namespace std;
 #define TRIANGLE_4
 //#define ROMBUS_1
 //#define ROMBUS_2
+//#define ROMBUS_3
 
 void main()
 {
@@ -87,6 +88,7 @@ void main()
 	}
 #endif // ROMBUS_2
 
+#ifdef ROMBUS_3
 	for (int i = 0; i < n * 2; i++)
 	{
 		for (int j = 0; j < n * 2; j++)
@@ -98,6 +100,19 @@ void main()
 			//if (i + n == j || j + n == i)cout << "\\";
 			if (n - 1 - j % n == i % n && i + j + 1 != n * 2)cout << "/";
 			else cout << " ";
+		}
+		cout << endl;
+	}
+#endif // ROMBUS_3
+
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			//if (i % 2 == j % 2)cout << "+ ";else cout << "- ";
+			//(i % 2 == j % 2) ? cout << "+ " : cout << "- ";
+			//i % 2 == j % 2 ? cout << "+ " : cout << "- ";
+			cout << (i % 2 == j % 2 ? "+ " : "- ");
 		}
 		cout << endl;
 	}

@@ -2,8 +2,9 @@
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
 TODO:
-1. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/ChessBoard.jpg
+1. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/ChessBoard.jpg	DONE
 2. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/HardChess.jpg
+3. Вывести в консоль треугольник Паскаля заданной высоты, которую пользователь вводит с клавиатуры;
 
 TODO:
 1. Добить геометрию:
