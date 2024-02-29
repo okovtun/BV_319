@@ -8,7 +8,7 @@ using namespace std;
 #define HORIZONTAL_LINE			(char)196 << (char)196
 #define VERTICAL_LINE			(char)179
 #define WHITE_BOX				"\xDB\xDB"	//(char)219 << (char)219
-#define BLACK_BOX				"\x20\x20"
+#define BLACK_BOX				"\x20\x20"	//0x20 - ASCII-код пробела
 //Escape-последовательность \xСС позволяет в состав строковой константы включить символ по ASCII-коду,
 //где CC - это шестнадцатеричный ASCII-код символа
 

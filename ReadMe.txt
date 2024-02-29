@@ -6,8 +6,10 @@ https://www.ntfs.com/index.html
 
 TODO:
 1. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/ChessBoard.jpg	DONE
-2. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/HardChess.jpg
+2. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/HardChess.jpg		DONE
 3. Вывести в консоль треугольник Паскаля заданной высоты, которую пользователь вводит с клавиатуры;
+4. Вывести на экран HardChess, используя всего два цикла;
+5. Зарегистрироваться на github.com;
 
 TODO:
 1. Добить геометрию:
