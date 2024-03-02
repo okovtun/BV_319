@@ -1,0 +1,11 @@
+﻿https://github.com/okovtun/BV_319.git
+https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
+
+TODO:
+1. https://www.ntfs.com/index.html
+2. https://github.com/okovtun/BV_319/blob/master/Hardware/08-Logical%20Structure%20of%20a%20Disk/winhex.zip
+3. На диске D:\ создать папку 'ISO Images', и в нее загрузить все файлы по следующим ссылкам:
+
+ISO Images:
+https://drive.google.com/drive/folders/1bGrU2-z1rWnStI0XMWXCyV5wDYsnD1mv?usp=sharing
+https://drive.google.com/file/d/1fldruT1mC5kGLd7GWu2fU4QVFmd2WL2s/view?usp=drive_link BootFlash

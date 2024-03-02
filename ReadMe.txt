@@ -1,9 +1,6 @@
 ﻿https://github.com/okovtun/BV_319.git
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
-TOREAD:
-https://www.ntfs.com/index.html
-
 TODO:
 1. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/ChessBoard.jpg	DONE
 2. https://github.com/okovtun/BV_011/blob/master/ControlStructures/Geometria/Task/HardChess.jpg		DONE
