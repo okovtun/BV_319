@@ -2,6 +2,11 @@
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
 TODO:
+1. Что такое файл подкачки и виртуальная память;
+2. В папку 'D:\Install' в гостевой системе скопировать файлы 'winrar571by.exe' и 'BootFlash.rar';
+3. В Windows Server установить VMware Tools
+
+DONE:
 Установить Windows Server 2003.
 
 DONE
