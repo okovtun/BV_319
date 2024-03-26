@@ -2,6 +2,13 @@
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
 TODO:
+В Windows XP на диске 'D:\' соддать папку 'Images', и в эту папку скопировать следующие файлы:
+	Acronis_all_11.iso;
+	memtest501.iso;
+	vcr35r.iso;
+https://drive.google.com/drive/folders/1bGrU2-z1rWnStI0XMWXCyV5wDYsnD1mv?usp=sharing
+
+DONE:
 1. Что такое файл подкачки и виртуальная память;
 2. В папку 'D:\Install' в гостевой системе скопировать файлы 'winrar571by.exe' и 'BootFlash.rar';
 3. В Windows Server установить VMware Tools
