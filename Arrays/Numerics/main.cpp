@@ -12,6 +12,7 @@ void main()
 {
 	setlocale(LC_ALL, "");
 	//for (int i = 0; i < 256; i++)cout << i << "\t" << (char)i << endl;
+	cout << 'A' + 'a' << endl;
 	int decimal;	//десятичное число, введенное с клавиатуры
 	cout << "Введите десятичное число: "; cin >> decimal;
 
@@ -40,20 +41,22 @@ void main()
 	const int MAX_HEX_CAPACITY = 8;
 	char hex[MAX_HEX_CAPACITY] = {};
 	int i = 0;
+	//for (; decimal; hex[i++] = decimal % 16, decimal /= 16);
 	for (; decimal; i++)
 	{
 		hex[i] = decimal % 16;	//получаем младший шестнадцатеричный разряд и сохраняем его
-		decimal /= 16;		//убираем младший шестнадцатеричный разряд из десятичного числа
+		hex[i] += hex[i] < 10 ? 48 : 55;
+		decimal /= 16;			//убираем младший шестнадцатеричный разряд из десятичного числа
 	}
-
 	for (--i; i >= 0; i--)
 	{
-		if (hex[i] < 10)
-			cout << (int)hex[i];
-		else
-			cout << char(hex[i] + 55);
+		cout << hex[i];
+		//cout << char(hex[i] < 10 ? hex[i] + '0' : hex[i] + 'A' - 10);
+		//cout << char(hex[i] < 10 ? hex[i] + 48 : hex[i] + 55);
+			//(hex[i] < 10) ? cout << (int)hex[i] : cout << char(hex[i] + 55);
+			//if (hex[i] < 10)cout << (int)hex[i];else cout << char(hex[i] + 55);
 	}
 	cout << endl;
 #endif // DEC_2_HEX
 
-		}
+}
