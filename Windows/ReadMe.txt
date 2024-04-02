@@ -2,11 +2,26 @@
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
 TODO:
+1. В чем разница между ждущим режимом и спящим режимом;
+2. В чем разница между режимами сна и гибернации;
+3. В чем разница между полным, инкрементным и дифференциальным резервным копированием;
+4. Добавить в менб загрузки:
+	memtest501.iso;
+	vcr35r.iso;
+	bartpe_mini (Нужно скачать с Teams);
+5. Зарегистрироваться на сайте Acronis, скачать Acronis True Image,
+   уствновить его в системе, создать LiveCD, этот LiveCD загрузить в виртуальную машину
+   и добавить его в BootMenu;
+   https://drive.google.com/file/d/16Bk1j0Ui1jgCwV_oTllsmBdS4m_63oDD/view?usp=drive_link Win10x64LTSB_en 1607
+   https://drive.google.com/file/d/137ygEWGI4EygO9Gs9nCBOV02sLQMZ7Vk/view?usp=drive_link Acronis True Image 2013
+
+DONE:
 В Windows XP на диске 'D:\' соддать папку 'Images', и в эту папку скопировать следующие файлы:
 	Acronis_all_11.iso;
 	memtest501.iso;
 	vcr35r.iso;
 https://drive.google.com/drive/folders/1bGrU2-z1rWnStI0XMWXCyV5wDYsnD1mv?usp=sharing
+https://drive.google.com/file/d/1zdxQJdWCenQsKrwqIzsWCCg3oHUpEYJY/view?usp=drive_link
 
 DONE:
 1. Что такое файл подкачки и виртуальная память;
