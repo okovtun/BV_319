@@ -1,7 +1,21 @@
 ﻿https://github.com/okovtun/BV_319.git
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
+RESOURCES:
+https://hdd.by/victoria/
+
+TOREAD:
+http://citforum.ru/operating_systems/linux/user/gl-02/gl_02_03.shtml
+
 TODO:
+1. Скачать и добавить в меню загрузки LiveCD с Windows7-10:
+	https://hdd.by/downloads/
+2. Скачать и добавить в меню загрузки Xubuntu:
+	https://xubuntu.org/download/
+3. Для успешного запуска обоих образов на виртуальной машине 
+	должно быть не менее 2GB RAM;
+
+DONE:
 1. В чем разница между ждущим режимом и спящим режимом;
 2. В чем разница между режимами сна и гибернации;
 3. В чем разница между полным, инкрементным и дифференциальным резервным копированием;
