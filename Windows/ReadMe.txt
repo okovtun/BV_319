@@ -8,6 +8,11 @@ TOREAD:
 http://citforum.ru/operating_systems/linux/user/gl-02/gl_02_03.shtml
 
 TODO:
+0. Проветрить компютер при помощи KVRT
+1. Добавить в меню загрузки Kaspersky rescue disk:
+	https://www.kaspersky.com/downloads/free-rescue-disk
+
+DONE:
 1. Скачать и добавить в меню загрузки LiveCD с Windows7-10:
 	https://hdd.by/downloads/
 2. Скачать и добавить в меню загрузки Xubuntu:
