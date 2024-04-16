@@ -6,9 +6,16 @@ using std::endl;
 #define tab "\t"
 
 void FillRand(int arr[], const int n);
+void FillRand(double arr[], const int n);
+
 void Print(int arr[], const int n);
+void Print(double arr[], const int n);
+
 void Sort(int arr[], const int n);
+
 int  Sum(int arr[], const int n);
+double Sum(double arr[], const int n);
+
 double Avg(int arr[], const int n);
 int  minValueIn(int arr[], const int n);
 int  maxValueIn(int arr[], const int n);
@@ -18,7 +25,7 @@ void shiftRight(int arr[], const int n, int number_of_shifts);
 void main()
 {
 	setlocale(LC_ALL, "");
-	const int n = 10;
+	const int n = 5;
 	int arr[n];
 	FillRand(arr, n);
 	Print(arr, n);
@@ -29,12 +36,20 @@ void main()
 	cout << "Минимальное значение в массиве: " << minValueIn(arr, n) << endl;
 	cout << "Максимальное значение в массиве: " << maxValueIn(arr, n) << endl;
 	int number_of_shifts;
-	cout << "Введите количество сдвигов: "; cin >> number_of_shifts;	//Enter number of shifts
-	shiftLeft(arr, n, number_of_shifts);
-	Print(arr, n);
-	cout << "Введите количество сдвигов: "; cin >> number_of_shifts;	//Enter number of shifts
-	shiftRight(arr, n, number_of_shifts);
-	Print(arr, n);
+	//cout << "Введите количество сдвигов: "; cin >> number_of_shifts;	//Enter number of shifts
+	//shiftLeft(arr, n, number_of_shifts);
+	//Print(arr, n);
+	//cout << "Введите количество сдвигов: "; cin >> number_of_shifts;	//Enter number of shifts
+	//shiftRight(arr, n, number_of_shifts);
+	//Print(arr, n);
+	const int SIZE = 8;
+	double brr[SIZE];
+	FillRand(brr, SIZE);
+	Print(brr, SIZE);
+	cout << "Сумма элементов массива: " << Sum(brr, SIZE) << endl;
+	//cout << "Среднее-арифметическое элементов массива: " << Avg(brr, SIZE) << endl;
+	//cout << "Минимальное значение в массиве: " << minValueIn(brr, SIZE) << endl;
+	//cout << "Максимальное значение в массиве: " << maxValueIn(brr, SIZE) << endl;
 }
 
 void FillRand(int arr[], const int n)
@@ -44,6 +59,14 @@ void FillRand(int arr[], const int n)
 		arr[i] = rand() % 100;
 	}
 }
+void FillRand(double arr[], const int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		arr[i] = rand() % 100;
+	}
+}
+
 void Print(int arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
@@ -52,6 +75,15 @@ void Print(int arr[], const int n)
 	}
 	cout << endl;
 }
+void Print(double arr[], const int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << tab;
+	}
+	cout << endl;
+}
+
 void Sort(int arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
@@ -76,6 +108,16 @@ int  Sum(int arr[], const int n)
 	}
 	return sum;
 }
+double Sum(double arr[], const int n)
+{
+	int sum = 0;
+	for (int i = 0; i < n; i++)
+	{
+		sum += arr[i];
+	}
+	return sum;
+}
+
 double Avg(int arr[], const int n)
 {
 	return Sum(arr, n) / (double)n;
