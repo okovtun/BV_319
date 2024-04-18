@@ -4,6 +4,9 @@ using std::cin;
 using std::cout;
 using std::endl;
 
+/// https://www.youtube.com/watch?v=caBQG_HYyK4
+/// https://www.youtube.com/watch?v=78PNadGEeTs
+
 #define tab "\t"
 #define delimiter "\n-----------------------------------------\n"
 
@@ -18,6 +21,7 @@ void FillRand(int arr[ROWS][COLS], const int ROWS, const int COLS);
 void Print(int arr[], const int n);
 void Print(double arr[], const int n);
 void Print(char arr[], const int n);
+void Print(int arr[ROWS][COLS], const int ROWS, const int COLS);
 
 void Sort(int arr[], const int n);
 void Sort(double arr[], const int n);
@@ -25,10 +29,12 @@ void Sort(double arr[], const int n);
 int  Sum(int arr[], const int n);
 double Sum(double arr[], const int n);
 int Sum(char arr[], const int n);
+int Sum(int arr[ROWS][COLS], const int ROWS, const int COLS);
 
 double Avg(int arr[], const int n);
 double Avg(double arr[], const int n);
 double Avg(char arr[], const int n);
+double Avg(int arr[ROWS][COLS], const int ROWS, const int COLS);
 
 int  minValueIn(int arr[], const int n);
 double  minValueIn(double arr[], const int n);
@@ -84,10 +90,11 @@ void main()
 
 	cout << delimiter << endl;
 
-	
 	int i_arr_2[ROWS][COLS];
 	FillRand(i_arr_2, ROWS, COLS);
-//	Print(i_arr_2, ROWS, COLS);
+	Print(i_arr_2, ROWS, COLS);
+	cout << "Сумма элементов массива: " << Sum(i_arr_2, ROWS, COLS) << endl;
+	cout << "Среднее-арифметическое элементов массива: " << Avg(i_arr_2, ROWS, COLS) << endl;
 }
 
 void FillRand(int arr[], const int n)
@@ -147,7 +154,18 @@ void Print(char arr[], const int n)
 	}
 	cout << endl;
 }
-
+void Print(int arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; j++)
+		{
+			cout << arr[i][j] << tab;
+		}
+		cout << endl;
+	}
+	cout << endl;
+}
 
 void Sort(int arr[], const int n)
 {
@@ -207,7 +225,18 @@ int Sum(char arr[], const int n)
 	}
 	return sum;
 }
-
+int Sum(int arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	int sum = 0;
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; j++)
+		{
+			sum += arr[i][j];
+		}
+	}
+	return sum;
+}
 double Avg(int arr[], const int n)
 {
 	return Sum(arr, n) / (double)n;
@@ -222,7 +251,10 @@ double Avg(char arr[], const int n)
 {
 	return (double)Sum(arr, n) / n;
 }
-
+double Avg(int arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	return (double)Sum(arr, ROWS, COLS) / ROWS / COLS;
+}
 
 int  minValueIn(int arr[], const int n)
 {
@@ -276,5 +308,5 @@ void shiftLeft(int arr[], const int n, int number_of_shifts)
 }
 void shiftRight(int arr[], const int n, int number_of_shifts)
 {
-	shiftLeft(arr, n, n-number_of_shifts);
+	shiftLeft(arr, n, n - number_of_shifts);
 }
