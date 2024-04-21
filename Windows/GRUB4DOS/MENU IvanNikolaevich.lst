@@ -1,0 +1,49 @@
+timeout 10
+default 0
+
+title Boot from HDD-1
+chainloader (hd0,0)+1
+rootnoverify(hd0,0)
+
+title Acronis all 11
+map --mem /Images/Acronis_all_11.iso (hd32)
+map --hook 
+chainloader (hd32)
+
+title Windows 7-10 x86 x64(EFI) Universal
+map --mem /Images/Windows_7_10PE_x86x64(EFI)_Universal_11.02.2017_by_Xemom1.iso (hd32)
+map --hook 
+chainloader (hd32)
+
+title xubuntu
+map --heads=0 --sectors-per-track=0 /Images/xubuntu-22.04.4-desktop-amd64.iso (hd32)
+map --hook
+root (hd32)
+kernel=/casper/vmlinuz iso-scan/filename=/Images/xubuntu-22.04.4-desktop-amd64.iso
+initrd=/casper/initrd
+
+title Kaspersky Rescue Disk 18 heads
+map --heads=0 --sectors-per-track=0 /Images/krd.iso (hd32)
+set check=%check:~-5,4%
+    partnew (%dev%,3) 0 0 0
+    partnew (%dev%,3) 0x00 /Images/krd.iso
+map --hook
+chainloader (hd32)
+
+title Kaspersky Rescue Disk 18 mem
+map --mem /Images/krd.iso (hd32)
+set check=%check:~-5,4%
+    partnew (%dev%,3) 0 0 0
+    partnew (%dev%,3) 0x00 /Images/krd.iso
+map --hook
+chainloader (hd32)
+
+title memtest501
+map --mem /Images/memtest501.iso (hd32)
+map --hook 
+chainloader (hd32)
+
+title vcr35r
+map --mem /Images/vcr35r.iso (hd32)
+map --hook 
+chainloader (hd32)

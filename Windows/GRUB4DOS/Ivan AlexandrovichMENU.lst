@@ -1,0 +1,79 @@
+timeout 5
+default 0
+
+title Boot from HDD-1
+chainloader (hd0,0)+1
+rootnoverify(hd0,0)
+
+title Kaspersky Rescue Disk 
+map --heads=0 --sectors-per-track=0 /data/krd.iso (0xff) || map --heads=0 --sectors-per-track=0 --mem /data/krd.iso (0xff)
+map --hook
+kernel	(0xff)/boot/grub/k-x86 net.ifnames=0 dostartx isoloop=krd.iso
+initrd	(0xff)/boot/grub/initrd.xz
+
+title Xubuntu
+map --heads=0 --sectors-per-track=0 /Images/xubuntu-22.04.4-desktop-amd64.iso (hd32)
+map --hook
+root (hd32)
+kernel=/casper/vmlinuz iso-scan/filename=/Images/xubuntu-22.04.4-desktop-amd64.iso 
+initrd=/casper/initrd
+
+title Windows 7-10PE
+map --mem /Images/Windows_7_10PE_x86x64(EFI)_Universal_11.02.2017_by_Xemom1.iso (hd32)
+map --hook
+chainloader (hd32)
+
+title Acronis all 11
+map --mem /Images/Acronis_all_11.iso (hd32)
+map --hook
+chainloader (hd32)
+
+title LiveCD
+map --mem /Images/LiveCD.iso (hd32)
+map --hook
+chainloader (hd32)
+
+title Memory test
+map --mem /Images/memtest501.iso (hd32)
+map --hook
+chainloader (hd32)
+
+title Victoria
+map --mem /Images/vcr35r.iso (hd32)
+map --hook
+chainloader (hd32)
+
+title BartPE
+map --mem /Images/bartpe_mini.iso (hd32)
+map --hook
+chainloader (hd32)
+
+title Windows 10x64 LTSC
+map /images/win10x64ltsc.iso (0xFF)
+map --hook
+chainloader (0xFF)
+
+title Start Windows XP from Hdd 0 Part 0
+root (hd0,0)
+rootnoverify (hd0)
+root (hd0,0)
+chainloader (hd0,0)/ntldr
+
+title Start Vista Load bootmgr From HD-0 Part-0
+root (hd0,0)
+chainloader (hd0,0)/bootmgr
+
+title boot from cd-rom
+cdrom --init
+map --hook
+chainloader (cd0)
+
+title commandline
+savedefault --wait=2
+commandline
+
+title Reboot
+reboot
+
+title ShutDown PC
+halt

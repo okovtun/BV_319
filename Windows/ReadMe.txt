@@ -3,6 +3,7 @@ https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 
 RESOURCES:
 https://hdd.by/victoria/
+https://www.aioboot.com/en/kaspersky-rescue-disk/
 
 TOREAD:
 http://citforum.ru/operating_systems/linux/user/gl-02/gl_02_03.shtml

@@ -1,0 +1,71 @@
+timeout 5
+default 0
+
+title Boot from HDD-1
+chainloader (hd0,0)+1
+rootnoverify(hd0,0)
+
+title Acronis all 11
+map --mem /images/Acronis_all_11.iso (hd32)
+map --hook
+chainloader (hd32)
+
+title memtest501
+map --mem /Images/memtest501.iso (hd32)
+map --hook
+chainloader (hd32)
+
+title vcr35r
+map --mem /Images/vcr35r.iso (hd32)
+map --hook
+chainloader (hd32)
+
+title bartpe mini
+map --mem /Images/bartpe_mini.iso (hd32)
+map --hook
+chainloader (hd32)
+
+title Xubuntu
+map --heads=0 --sectors-per-track=0 /Images/xubuntu-22.04.4-desktop-amd64.iso (hd32)
+map --hook
+root (hd32)
+kernel=/casper/vmlinuz iso-scan/filename=/Images/xubuntu-22.04.4-desktop-amd64.iso
+initrd=/casper/initrd
+
+title Kaspersky Rescue Disk 18 
+map --heads=0 --sectors-per-track=0 /Images/krd.iso (hd32)
+set check=%check:~-5,4%
+    partnew (%dev%,3) 0 0 0
+    partnew (%dev%,3) 0x00 /Images/krd.iso
+map --hook
+chainloader (hd32)
+
+title Windows 10x64 LTSC
+map /images/win10x64ltsc.iso (0xFF)
+map --hook
+chainloader (0xFF)
+
+title Start Windows XP from Hdd 0 Part 0
+root (hd0,0)
+rootnoverify (hd0)
+root (hd0,0)
+chainloader (hd0,0)/ntldr
+
+title Start Vista Load bootmgr From HD-0 Part-0
+root (hd0,0)
+chainloader (hd0,0)/bootmgr
+
+title boot from cd-rom
+cdrom --init
+map --hook
+chainloader (cd0)
+
+title commandline
+savedefault --wait=2
+commandline
+
+title Reboot
+reboot
+
+title ShutDown PC
+halt
