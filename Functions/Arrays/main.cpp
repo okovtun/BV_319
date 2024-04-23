@@ -10,8 +10,8 @@ using std::endl;
 #define tab "\t"
 #define delimiter "\n-----------------------------------------\n"
 
-const int ROWS = 3;
-const int COLS = 4;
+const int ROWS = 10;
+const int COLS = 10;
 
 void FillRand(int arr[], const int n);
 void FillRand(double arr[], const int n);
@@ -25,6 +25,7 @@ void Print(int arr[ROWS][COLS], const int ROWS, const int COLS);
 
 void Sort(int arr[], const int n);
 void Sort(double arr[], const int n);
+void Sort(int arr[ROWS][COLS], const int ROWS, const int COLS);
 
 int  Sum(int arr[], const int n);
 double Sum(double arr[], const int n);
@@ -95,6 +96,8 @@ void main()
 	Print(i_arr_2, ROWS, COLS);
 	cout << "Сумма элементов массива: " << Sum(i_arr_2, ROWS, COLS) << endl;
 	cout << "Среднее-арифметическое элементов массива: " << Avg(i_arr_2, ROWS, COLS) << endl;
+	Sort(i_arr_2, ROWS, COLS);
+	Print(i_arr_2, ROWS, COLS);
 }
 
 void FillRand(int arr[], const int n)
@@ -197,7 +200,35 @@ void Sort(double arr[], const int n)
 		}
 	}
 }
-
+void Sort(int arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	int iterations = 0;
+	int exchanges = 0;
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; j++)
+		{
+			for (int k = i; k < ROWS; k++)
+			{
+				for (int l = k == i ? j + 1 : 0; l < COLS; l++)
+				{
+					//arr[i][j] - выьранный элемент
+					//arr[k][l] - перебираемый элемент
+					iterations++;
+					if (arr[k][l] < arr[i][j])
+					{
+						int buffer = arr[i][j];
+						arr[i][j] = arr[k][l];
+						arr[k][l] = buffer;
+						exchanges++;
+					}
+				}
+			}
+		}
+	}
+	cout << "Массив отсортирован за " << iterations << " итераций\n";
+	cout << "Обменов элементов: " << exchanges << endl;
+}
 int  Sum(int arr[], const int n)
 {
 	int sum = 0;
