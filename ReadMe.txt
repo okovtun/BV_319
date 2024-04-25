@@ -8,8 +8,15 @@ TODO:
 ////////////				  Functions						////////////
 ////////////////////////////////////////////////////////////////////////
 
-//2D overloading in progress
 TODO:
+1. В ветке 'FunctionTemplates' перегрузить все функции для двумерных массивов,
+   функцию FillRand() перегрузить для двумерных массивов типа 'int', 'double' и 'char';
+2. Сделать commit и залить его на GitHub;
+3. От ветки 'FunctionTemplates' создать ветку 'SeparatedTemplates'
+   и вынести шаблонные функции в отдельные файлы;
+
+//2D overloading in progress
+DONE:
 Перегрузить все функции для двумерных массивов 'int', 'double' и 'char';
 
 DONE:
