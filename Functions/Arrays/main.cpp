@@ -20,19 +20,29 @@ template<typename T>
 //T - имя шаблонного типа
 void Print(T arr[], const int n);
 template<typename T>void Print(T arr[ROWS][COLS], const int ROWS, const int COLS);
+
 template<typename T>void Sort(T arr[], const int n);
+template<typename T>void Sort(T arr[ROWS][COLS], const int ROWS, const int COLS);
 
 template<typename T>T  Sum(T arr[], const int n);
 const char*  Sum(char arr[], const int n);
+template<typename T>T  Sum(T arr[ROWS][COLS], const int ROWS, const int COLS);
 
 template<typename T>double Avg(T arr[], const int n);
 const char* Avg(char arr[], const int n);
+template<typename T>double Avg(T arr[ROWS][COLS], const int ROWS, const int COLS);
 
 template<typename T>T  minValueIn(T arr[], const int n);
 template<typename T>T  maxValueIn(T arr[], const int n);
 
-void shiftLeft(int arr[], const int n, int number_of_shifts);
-void shiftRight(int arr[], const int n, int number_of_shifts);
+template<typename T>T  minValueIn(T arr[ROWS][COLS], const int ROWS, const int COLS);
+template<typename T>T  maxValueIn(T arr[ROWS][COLS], const int ROWS, const int COLS);
+
+template<typename T>void shiftLeft(T arr[], const int n, int number_of_shifts);
+template<typename T>void shiftRight(T arr[], const int n, int number_of_shifts);
+
+template<typename T>void shiftLeft(T arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts);
+template<typename T>void shiftRight(T arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts);
 
 void main()
 {
@@ -64,6 +74,12 @@ void main()
 	cout << "Максимальное значение в массиве: " << maxValueIn(d_arr, D_SIZE) << endl;
 	Sort(d_arr, D_SIZE);
 	Print(d_arr, D_SIZE);
+	//cout << "Введите количество сдвигов: "; cin >> number_of_shifts;	//Enter number of shifts
+	//shiftLeft(d_arr, D_SIZE, number_of_shifts);
+	//Print(d_arr, D_SIZE);
+	//cout << "Введите количество сдвигов: "; cin >> number_of_shifts;	//Enter number of shifts
+	//shiftRight(d_arr, D_SIZE, number_of_shifts);
+	//Print(d_arr, D_SIZE);
 
 	const int C_SIZE = 11;
 	char c_arr[C_SIZE];
@@ -76,6 +92,20 @@ void main()
 
 	int i_arr_2[ROWS][COLS];
 	FillRand(i_arr_2, ROWS, COLS);
+	Print(i_arr_2, ROWS, COLS);
+	Print(i_arr_2[0], ROWS*COLS);
+	cout << "Сумма элементов массива: " << Sum(i_arr_2, ROWS, COLS) << endl;
+	cout << "Среднее-арифметическое элементов массива: " << Avg(i_arr_2, ROWS, COLS) << endl;
+	cout << "Минимальное значение в массиве: " << minValueIn(i_arr_2, ROWS, COLS) << endl;
+	cout << "Максимальное значение в массиве: " << maxValueIn(i_arr_2, ROWS, COLS) << endl;
+	Sort(i_arr_2, ROWS, COLS);
+	Print(i_arr_2, ROWS, COLS);
+	Print(i_arr_2[0], ROWS*COLS);
+	cout << "Введите количество сдвигов: "; cin >> number_of_shifts;	//Enter number of shifts
+	shiftLeft(i_arr_2, ROWS, COLS, number_of_shifts);
+	Print(i_arr_2, ROWS, COLS);
+	cout << "Введите количество сдвигов: "; cin >> number_of_shifts;	//Enter number of shifts
+	shiftRight(i_arr_2, ROWS, COLS, number_of_shifts);
 	Print(i_arr_2, ROWS, COLS);
 }
 
@@ -147,6 +177,21 @@ template<typename T>void Sort(T arr[], const int n)
 		}
 	}
 }
+template<typename T>void Sort(T arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	for (int i = 0; i < ROWS*COLS; i++)
+	{
+		for (int j = i+1; j < ROWS*COLS; j++)
+		{
+			if (arr[0][j] < arr[0][i])
+			{
+				T buffer = arr[0][i];
+				arr[0][i] = arr[0][j];
+				arr[0][j] = buffer;
+			}
+		}
+	}
+}
 //https://www.youtube.com/watch?v=kliQ417Isww&pp=ygUXZGFyayB0cmFucXVpbGxpdHkgYWxidW0%3D
 template<typename T>T  Sum(T arr[], const int n)
 {
@@ -161,6 +206,18 @@ const char*  Sum(char arr[], const int n)
 {
 	return "Для типа данных 'char' сумма НЕ вычисляется";
 }
+template<typename T>T  Sum(T arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	T sum = T();	//T() - значение по умолчанию для шаблонного типа
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; j++)
+		{
+			sum += arr[i][j];
+		}
+	}
+	return sum;
+}
 template<typename T>double Avg(T arr[], const int n)
 {
 	return Sum(arr, n) / (double)n;
@@ -172,6 +229,10 @@ const char* Avg(char arr[], const int n)
 	return "Для типа данных 'char' AVG НЕ вычисляется";
 	//FreeBSD
 	//Prohybited
+}
+template<typename T>double Avg(T arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	return (double)Sum(arr, ROWS, COLS) / ROWS / COLS;
 }
 
 template<typename T>T  minValueIn(T arr[], const int n)
@@ -192,11 +253,36 @@ template<typename T>T  maxValueIn(T arr[], const int n)
 	}
 	return max;
 }
-void shiftLeft(int arr[], const int n, int number_of_shifts)
+template<typename T>T  minValueIn(T arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	T min = arr[0][0];
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; j++)
+		{
+			if (arr[i][j] < min)min = arr[i][j];
+		}
+	}
+	return min;
+}
+template<typename T>T  maxValueIn(T arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	T max = arr[0][0];
+	for (int i = 0; i < ROWS; i++)
+	{
+		for (int j = 0; j < COLS; j++)
+		{
+			if (arr[i][j] > max)max = arr[i][j];
+		}
+	}
+	return max;
+}
+
+template<typename T>void shiftLeft(T arr[], const int n, int number_of_shifts)
 {
 	for (int i = 0; i < number_of_shifts; i++)
 	{
-		int buffer = arr[0];
+		T buffer = arr[0];
 		for (int i = 1; i < n; i++)
 		{
 			arr[i - 1] = arr[i];
@@ -204,7 +290,15 @@ void shiftLeft(int arr[], const int n, int number_of_shifts)
 		arr[n - 1] = buffer;
 	}
 }
-void shiftRight(int arr[], const int n, int number_of_shifts)
+template<typename T>void shiftRight(T arr[], const int n, int number_of_shifts)
 {
 	shiftLeft(arr, n, n - number_of_shifts);
+}
+template<typename T>void shiftLeft(T arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
+{
+	shiftLeft(arr[0], ROWS*COLS, number_of_shifts);
+}
+template<typename T>void shiftRight(T arr[ROWS][COLS], const int ROWS, const int COLS, int number_of_shifts)
+{
+	shiftRight(arr[0], ROWS*COLS, number_of_shifts);
 }
