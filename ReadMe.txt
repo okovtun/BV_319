@@ -1,5 +1,6 @@
 ﻿https://github.com/okovtun/BV_319.git
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
+https://chat.whatsapp.com/Gf03mZKDUqx3g9nMEOEpjn
 
 TODO:
 !!!Разобрать Палиндром!!!
@@ -7,6 +8,8 @@ TODO:
 ////////////////////////////////////////////////////////////////////////
 ////////////				  Functions						////////////
 ////////////////////////////////////////////////////////////////////////
+
+https://chat.whatsapp.com/Gf03mZKDUqx3g9nMEOEpjn
 
 //2D overloading in progress
 TODO:
