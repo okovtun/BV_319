@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1082
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Functions", "Functions\Functions.vcxproj", "{795D2D9E-FD5E-43FA-AAFF-9521B83EB4D8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ArraysLibTest", "ArraysLibTest\ArraysLibTest.vcxproj", "{0300A4EC-282E-470D-B474-2326AE3FF03B}"
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays", "Arrays\Arrays.vcxproj", "{4095EA20-C496-4944-9558-E0D803272766}"
 EndProject
 Global
@@ -23,6 +25,14 @@ Global
 		{795D2D9E-FD5E-43FA-AAFF-9521B83EB4D8}.Release|x64.Build.0 = Release|x64
 		{795D2D9E-FD5E-43FA-AAFF-9521B83EB4D8}.Release|x86.ActiveCfg = Release|Win32
 		{795D2D9E-FD5E-43FA-AAFF-9521B83EB4D8}.Release|x86.Build.0 = Release|Win32
+		{0300A4EC-282E-470D-B474-2326AE3FF03B}.Debug|x64.ActiveCfg = Debug|x64
+		{0300A4EC-282E-470D-B474-2326AE3FF03B}.Debug|x64.Build.0 = Debug|x64
+		{0300A4EC-282E-470D-B474-2326AE3FF03B}.Debug|x86.ActiveCfg = Debug|Win32
+		{0300A4EC-282E-470D-B474-2326AE3FF03B}.Debug|x86.Build.0 = Debug|Win32
+		{0300A4EC-282E-470D-B474-2326AE3FF03B}.Release|x64.ActiveCfg = Release|x64
+		{0300A4EC-282E-470D-B474-2326AE3FF03B}.Release|x64.Build.0 = Release|x64
+		{0300A4EC-282E-470D-B474-2326AE3FF03B}.Release|x86.ActiveCfg = Release|Win32
+		{0300A4EC-282E-470D-B474-2326AE3FF03B}.Release|x86.Build.0 = Release|Win32
 		{4095EA20-C496-4944-9558-E0D803272766}.Debug|x64.ActiveCfg = Debug|x64
 		{4095EA20-C496-4944-9558-E0D803272766}.Debug|x64.Build.0 = Debug|x64
 		{4095EA20-C496-4944-9558-E0D803272766}.Debug|x86.ActiveCfg = Debug|Win32
