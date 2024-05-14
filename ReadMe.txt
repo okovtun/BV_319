@@ -2,6 +2,9 @@
 https://www.youtube.com/playlist?list=PLeqyOOqxeiIMAsBCAT2iL0nEHONChw0yJ
 https://chat.whatsapp.com/Gf03mZKDUqx3g9nMEOEpjn
 
+Book:
+https://empyreal96.github.io/nt-info-depot/Windows-Internals-PDFs/Windows%20System%20Internals%207e%20Part%201.pdf
+
 TODO:
 !!!Разобрать Палиндром!!!
 
