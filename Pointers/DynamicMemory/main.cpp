@@ -17,6 +17,13 @@ void main()
 	FillRand(arr, n);
 	Print(arr, n);
 
+	int value;
+	cout << "Введите добавляемое значение: "; cin >> value;	//Enter a value to be added
+	arr[n] = value;
+	n++;
+
+	Print(arr, n);
+
 	delete[] arr;
 	//Memory leaks
 }
