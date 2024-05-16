@@ -5,6 +5,7 @@ using namespace std;
 
 void FillRand(int arr[], const int n);
 void Print(int arr[], const int n);
+int* push_back(int arr[], int& n, const int value);
 
 void main()
 {
@@ -19,9 +20,7 @@ void main()
 
 	int value;
 	cout << "Введите добавляемое значение: "; cin >> value;	//Enter a value to be added
-	arr[n] = value;
-	n++;
-
+	arr = push_back(arr, n, value);
 	Print(arr, n);
 
 	delete[] arr;
@@ -44,4 +43,27 @@ void Print(int arr[], const int n)
 		//Обращение к элементам массива через оператор индексирования []
 	}
 	cout << endl;
+}
+
+int* push_back(int arr[], int& n, const int value)
+{
+	//1) Создаем буферный массив нужного мазмера:
+	int* buffer = new int[n + 1];
+	//2) Копируем значения элементов исходного массива в буферный:
+	for (int i = 0; i < n; i++)
+	{
+		buffer[i] = arr[i];
+	}
+	//3) Удаляем исходный массив из памяти:
+	delete[] arr;
+	//4) Подменяем адрес в указателе 'arr' адресом нового массива:
+	int a = 2;
+	int b = 3;
+	a = b;
+	arr = buffer;
+	//5) Только после всего этого можно добавить значение в конец массива:
+	arr[n] = value;
+	//6) После добавления элемента в конец массива, кличество его элементов увеличивается на 1:
+	n++;
+	return arr;
 }
