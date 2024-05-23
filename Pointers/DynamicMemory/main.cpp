@@ -29,6 +29,8 @@ int** insert_row(int** arr, int& rows, const int cols, int position);
 
 int** pop_row_back(int** arr, int& rows, const int cols);
 
+void push_col_back(int** arr, const int rows, int& cols);
+
 //#define DYNAMIC_MEMORY_1
 #define DYNAMIC_MEMORY_2
 //#define PERFORMANCE_CHECK
@@ -101,6 +103,9 @@ void main()
 	Print(arr, rows, cols);
 
 	arr = pop_row_back(arr, rows, cols);
+	Print(arr, rows, cols);
+
+	push_col_back(arr, rows, cols);
 	Print(arr, rows, cols);
 
 	Clear(arr, rows);
@@ -358,4 +363,16 @@ int** pop_row_back(int** arr, int& rows, const int cols)
 	delete[] arr[rows];
 	delete[] arr;
 	return buffer;
+}
+
+void push_col_back(int** arr, const int rows, int& cols)
+{
+	for (int i = 0; i < rows; i++)
+	{
+		int* buffer = new int[cols + 1]{};
+		for (int j = 0; j < cols; j++)buffer[j] = arr[i][j];
+		delete[] arr[i];
+		arr[i] = buffer;
+	}
+	cols++;
 }
